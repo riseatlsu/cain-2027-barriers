@@ -1,0 +1,47 @@
+participant_id,request_id,barrier,most_useful_resource,video_count,text_count,chat_count,total_interactions,description,most_used_resource
+p04111434,request_fddb37fdd2a44b2d846c8418288261f8,"I think I know what things to use, but I don't know how to make them work together…",Chat,0,0,1,1,"I am not sure how to process customer input into robot movement, more specifically, letting the robot have access to customer options ",Chat
+p04121200,request_aa4edcd909c9431f9f29a8dedbe40e70,"I think I know what I want the robot to do, but I don’t know what to use…",None,0,0,0,0,message,
+p04121200,request_3a939ae28ac04f688e94221ad30f8885,"I think I know what things to use, but I don't know how to make them work together…",None,4,2,0,6,welcome message and question,Video
+p04171512,request_4ee1b510fa8f4189b80cf52a65874303,,Read,0,0,1,1,Im confused on what you meant by what the client wants,Chat
+p04171512,request_4682f45e2d2d4c74afcb17cab9adc030,"I think I know what I want the robot to do, but I don’t know what to use…",Chat,0,0,1,1,The gripper wont open at the top,Chat
+p04101549,request_3cbfee3e20c24ba187e977feca6c4482,"I thought I knew how to use this, but it didn’t do what I expected…",Chat,1,0,1,2,The close gripper porcedure is not working anymore,Video
+p04101549,request_adfb04368a504bb1a61c3eda023fad11,"I think I know what to use, but I don't know how to use it…",Chat,0,0,1,1,"what does the restart gripper procedure do
+",Chat
+p04101549,request_c117dc0d14b6494baf613c94c8ea8816,"I think I know what to use, but I don't know how to use it…",Chat,0,0,1,1,I am running the code to go to the left dispenser and close the grip but it keeps getting stuck,Chat
+p04192002,request_a008b0fb72084bc7996ea6d0c72bea86,"I think I know what to use, but I don't know how to use it…",Chat,0,1,2,3,I am using the if block and am not sure how to insert a variable into the block ,Chat
+p04192002,request_fe6e0a284c604ab295c5811b3a260b92,"I think I know what to use, but I don't know how to use it…",Chat,0,0,1,1,"what blocks do i need to instantiate a variable
+",Chat
+p04192002,request_adf74a77cdfc4d40978e61a9fa578a8a,"I thought I knew how to use this, but it didn’t do what I expected…",Read,0,0,1,1,"When I ask it a question with 5 options and store in a variable, how does it get encoded into that variable? Like does option 1 get stored as 1?",Chat
+p04192002,request_f08f4ea89716478a84db57e7a5ba30fd,"I thought I knew how to use this, but it didn’t do what I expected…",Chat,0,0,1,1,"After I ask a question to user, the program does not progress.",Chat
+p04121334,request_9c0525b6f9284bbc9a8c1c3e0d9a53ee,Ending the program with input,Chat,0,0,1,1,"How can I end the program using user input?
+",Chat
+p04121334,request_bab1952773f14726949b513ba5cb2f78,Reset robot,Read,0,0,2,2,I just need the robot to be moved so I can try again,Chat
+p04121302,request_7d4032b2598c4f93b5b7bb0ac3caab58,"I think I know what things to use, but I don't know how to make them work together…",Read,0,0,1,1,how do I save responses to a question to a variable so I can use it in an if statement?,Chat
+p04121302,request_7580d083249a4e75942d6fd6822d90c1,,Watch,2,0,1,3,How do I save a response from a question to a variable so I can use it in an if statement?,Video
+p04121302,request_1631c953931e4c29b6338de276418e04,Multiple Choice Questions?,Chat,0,0,1,1,How do I give the option to have multiple-choice questions?,Chat
+p04171840,request_5137b816662e47089dca671b9cf9afa4,"I think I know what I want the robot to do, but I don’t know what to use…",Watch,3,0,0,3,I never used this screen before or language. I need some video to show me how to use the programming device,Video
+p05021329,request_a95ffae9299c4767a85c125cd4febfb1,"I thought I knew how to use this, but it didn’t do what I expected…",None,2,1,2,5,"I have something that I want to run, but whenever I run & expect it to prompt the user, I get an error saying that RGX is not connect?",Video
+p04151704,request_b388cc4a42ed4494bf00976504f60dbc,"I thought I knew how to use this, but it didn’t do what I expected…",Chat,2,1,2,5,"For the question variable, i tapped on the ""save answer in ____"" and many different options popped up. I'm not sure which option i should select for the number variable",Video
+p04101428,request_28bfd6c331d54cc4b376e57ba22d442d,"I think I know what I want the robot to do, but I don’t know what to use…",None,2,2,1,5,"I think i know what i want to do but do not know how to do it
+",Video
+p04101428,request_5f48e4bad9fd4c8782fbb9681ed5179a,"I think I know what things to use, but I don't know how to make them work together…",Chat,0,0,1,1,I have a hard time trying to make my question into the action I want ,Chat
+p04121421,request_cbe24a76aa2f49b9a3023bb81a152808,"I think I know what things to use, but I don't know how to make them work together…",Chat,0,0,1,1,How do I copy more than one block at the same time?,Chat
+p04121421,request_790e37f5c3bf4d35ba1ac44856300a45,I don’t know what I want the robot to do…,Chat,0,0,1,1,What is the role of the customer?,Chat
+p05011842,request_f7856461827140e390f0c0c4c61b1df8,"I think I know what I want the robot to do, but I don’t know what to use…",Chat,0,0,1,1,"i want the robot to search for the dispenser at the bottom but if there isnt it should move to the different direction when all the dispenser are taken care of it should stop im not sure what the boolean value do
+",Chat
+p05011842,request_4e67f5799a4648a0b77784a0b4c9020f,"I thought I knew how to use this, but it didn’t do what I expected…",Chat,0,0,1,1,"the robot is stuck in a position and it is not moving no matter how many times i run
+",Chat
+p04111055,request_f43cc300f9df40e2a7a402437762269d,"I thought I knew how to use this, but it didn’t do what I expected…",Read,0,2,0,2,"i want the robot to not require start button after input
+",Text
+p04111055,request_aeb6e8b2fea84c20811beeae948926a2,I don’t know what I want the robot to do…,None,0,0,0,0,"the robot is in segmented modes for some reason
+",
+p04111055,request_d9c2b5b7f6834b7699103538d21fb962,I don’t know what I want the robot to do…,None,0,2,0,2," i want the robot to be able to run and not stop until end of program
+",Text
+p04161322,request_e81daabc05154f0791c0b81471cbcf47,"I think I know what I want the robot to do, but I don’t know what to use…",,0,0,1,1,variable name saves the movement of the robot,Chat
+p05021829,request_36506c2b67754da8a2210ba45e5b62be,Wizard,Read,2,0,0,2,"Can you explain the move, stop and wait, and procedures",Video
+p05021829,request_0f1c5d8534bd4054beb3b1dbc0d3914b,"I think I know what to use, but I don't know how to use it…",Chat,0,0,1,1,looing for the signal to receive touch from flex screen,Chat
+p05011708,request_d737122554ed49909c7302a1dfd5f1f6,"I think I know what things to use, but I don't know how to make them work together…",,0,0,1,1,"When i add the blocks all it seems to be doing is an infinite loop or some type of loop. When i add the move blocks the robot just stands there doing nothing , but I have a feeling i know what to do",Chat
+p04151833,request_625809f185f34a92963f31b7a4a6dbe7,"I think I know what to use, but I don't know how to use it…",Chat,4,0,1,5,I know that I have to save the users input to help decide where the robot to move to but am not sure how.,Video
+p04152005,request_326a62bb44664763b33c792500f85040,"I think I know what I want the robot to do, but I don’t know what to use…",Chat,2,1,1,4,Is there a tutorial on this,Video
+p04111301,request_dd536aa3de3a4bdeb22c692c267b3338,"I think I know what to use, but I don't know how to use it…",Chat,0,0,1,1,"Is there a way to set a number with the options in the message?
+",Chat

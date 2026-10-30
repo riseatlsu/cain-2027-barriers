@@ -1,0 +1,37 @@
+participant_id,request_id,learning_barrier,barrier_category,chat_count,text_count,video_count,total_interactions,created_at,closed_at
+p04111434,request_fddb37fdd2a44b2d846c8418288261f8,"I think I know what things to use, but I don't know how to make them work together…",Coordination,1,0,0,1,11/04/2024 15:17:37,11/04/2024 15:35:37
+p04121200,request_aa4edcd909c9431f9f29a8dedbe40e70,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,0,0,0,0,12/04/2024 12:07:00,12/04/2024 12:17:56
+p04121200,request_3a939ae28ac04f688e94221ad30f8885,"I think I know what things to use, but I don't know how to make them work together…",Coordination,0,2,4,6,12/04/2024 12:01:22,12/04/2024 12:06:35
+p04171512,request_4ee1b510fa8f4189b80cf52a65874303,,Other,1,0,0,1,17/04/2024 15:26:03,17/04/2024 15:31:12
+p04171512,request_4682f45e2d2d4c74afcb17cab9adc030,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,1,0,0,1,17/04/2024 15:51:52,17/04/2024 16:15:41
+p04101549,request_3cbfee3e20c24ba187e977feca6c4482,"I thought I knew how to use this, but it didn’t do what I expected…",Understanding,1,0,1,2,10/04/2024 16:30:52,10/04/2024 16:41:55
+p04101549,request_adfb04368a504bb1a61c3eda023fad11,"I think I know what to use, but I don't know how to use it…",Use,1,0,0,1,10/04/2024 16:44:01,10/04/2024 16:46:04
+p04101549,request_c117dc0d14b6494baf613c94c8ea8816,"I think I know what to use, but I don't know how to use it…",Use,1,0,0,1,10/04/2024 16:57:13,10/04/2024 16:58:59
+p04192002,request_a008b0fb72084bc7996ea6d0c72bea86,"I think I know what to use, but I don't know how to use it…",Use,2,1,0,3,19/04/2024 20:27:55,19/04/2024 20:36:27
+p04192002,request_fe6e0a284c604ab295c5811b3a260b92,"I think I know what to use, but I don't know how to use it…",Use,1,0,0,1,19/04/2024 21:17:07,19/04/2024 21:19:53
+p04192002,request_adf74a77cdfc4d40978e61a9fa578a8a,"I thought I knew how to use this, but it didn’t do what I expected…",Understanding,1,0,0,1,19/04/2024 20:53:06,19/04/2024 20:54:24
+p04192002,request_f08f4ea89716478a84db57e7a5ba30fd,"I thought I knew how to use this, but it didn’t do what I expected…",Understanding,1,0,0,1,19/04/2024 21:20:34,19/04/2024 21:22:26
+p04121334,request_9c0525b6f9284bbc9a8c1c3e0d9a53ee,Getting help with stopping the program with user input,Other,1,0,0,1,12/04/2024 14:44:06,12/04/2024 14:46:21
+p04121334,request_bab1952773f14726949b513ba5cb2f78,I didn't know what to do about the red light?,Other,2,0,0,2,12/04/2024 14:18:16,12/04/2024 14:21:48
+p04121302,request_7d4032b2598c4f93b5b7bb0ac3caab58,"I think I know what things to use, but I don't know how to make them work together…",Coordination,1,0,0,1,12/04/2024 13:35:14,12/04/2024 13:35:58
+p04121302,request_7580d083249a4e75942d6fd6822d90c1,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,1,0,2,3,12/04/2024 13:36:43,12/04/2024 14:00:20
+p04121302,request_1631c953931e4c29b6338de276418e04,Multiple Choice Questions?,Other,1,0,0,1,12/04/2024 13:29:20,12/04/2024 13:34:24
+p04171840,request_5137b816662e47089dca671b9cf9afa4,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,0,0,3,3,17/04/2024 18:54:38,17/04/2024 19:48:34
+p05021329,request_a95ffae9299c4767a85c125cd4febfb1,"I thought I knew how to use this, but it didn’t do what I expected…",Understanding,2,1,2,5,02/05/2024 13:59:41,02/05/2024 14:18:28
+p04151704,request_b388cc4a42ed4494bf00976504f60dbc,"I thought I knew how to use this, but it didn’t do what I expected…",Understanding,2,1,2,5,15/04/2024 17:13:53,15/04/2024 17:56:33
+p04101428,request_28bfd6c331d54cc4b376e57ba22d442d,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,1,2,2,5,10/04/2024 14:45:15,10/04/2024 15:24:52
+p04101428,request_5f48e4bad9fd4c8782fbb9681ed5179a,"I think I know what things to use, but I don't know how to make them work together…",Coordination,1,0,0,1,10/04/2024 15:25:36,10/04/2024 15:27:45
+p04121421,request_cbe24a76aa2f49b9a3023bb81a152808,"I think I know what things to use, but I don't know how to make them work together…",Coordination,1,0,0,1,12/04/2024 15:03:19,12/04/2024 15:05:06
+p04121421,request_790e37f5c3bf4d35ba1ac44856300a45,I don’t know what I want the robot to do…,Design,1,0,0,1,12/04/2024 14:47:57,12/04/2024 14:49:19
+p05011842,request_f7856461827140e390f0c0c4c61b1df8,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,1,0,0,1,01/05/2024 19:08:25,01/05/2024 19:23:10
+p05011842,request_4e67f5799a4648a0b77784a0b4c9020f,"I thought I knew how to use this, but it didn’t do what I expected…",Understanding,1,0,0,1,01/05/2024 19:24:03,01/05/2024 19:32:36
+p04111055,request_f43cc300f9df40e2a7a402437762269d,I don’t know what I want the robot to do…,Design,0,2,0,2,11/04/2024 11:48:53,11/04/2024 11:53:35
+p04111055,request_aeb6e8b2fea84c20811beeae948926a2,I don’t know what I want the robot to do…,Design,0,0,0,0,11/04/2024 12:10:15,11/04/2024 12:13:48
+p04111055,request_d9c2b5b7f6834b7699103538d21fb962,I don’t know what I want the robot to do…,Design,0,2,0,2,11/04/2024 11:54:05,11/04/2024 12:05:13
+p04161322,request_e81daabc05154f0791c0b81471cbcf47,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,1,0,0,1,16/04/2024 14:04:38,
+p05021829,request_36506c2b67754da8a2210ba45e5b62be,"I think I know what to use, but I don't know how to use it…",Use,0,0,2,2,02/05/2024 18:37:07,02/05/2024 18:47:20
+p05021829,request_0f1c5d8534bd4054beb3b1dbc0d3914b,"I think I know what to use, but I don't know how to use it…",Use,1,0,0,1,02/05/2024 18:56:14,02/05/2024 19:50:02
+p05011708,request_d737122554ed49909c7302a1dfd5f1f6,"I think I know what things to use, but I don't know how to make them work together…",Coordination,1,0,0,1,01/05/2024 17:35:29,
+p04151833,request_625809f185f34a92963f31b7a4a6dbe7,"I think I know what to use, but I don't know how to use it…",Use,1,0,4,5,15/04/2024 19:02:24,15/04/2024 19:51:39
+p04152005,request_326a62bb44664763b33c792500f85040,"I think I know what I want the robot to do, but I don’t know what to use…",Selection,1,1,2,4,15/04/2024 20:12:31,15/04/2024 21:06:09
+p04111301,request_dd536aa3de3a4bdeb22c692c267b3338,"I think I know what to use, but I don't know how to use it…",Use,1,0,0,1,11/04/2024 13:56:56,11/04/2024 14:25:09

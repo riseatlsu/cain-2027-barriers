@@ -1,0 +1,52 @@
+MODULE Wizard
+PERS robtarget RightDispenser_Bottom:=[[505.318389892578, 161.108917236328, 281.744720458984], [0.237862035632133, -0.693731486797333, 0.63124543428421, 0.252363741397858], [0, 0, -2, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget RightDispenser_Top:=[[490.675323486328, 143.675582885742, 438.604034423828], [0.30932542681694, -0.656616508960724, 0.624316513538361, 0.288793116807938], [0, 0, -2, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget Center:=[[454.466979980469, -11.8663320541382, 520.459838867188], [0.0135859744623303, 0.00468210922554135, 0.999896168708801, -0.00106594688259065], [-1, -1, -1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget LeftDispenser_Bottom:=[[490.311492919922, -140.92741394043, 259.650268554688], [0.279302656650543, 0.613198101520538, 0.683355867862701, -0.281074553728104], [-1, -1, 1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget LeftDispenser_Top:=[[494.898681640625, -137.540725708008, 416.188842773438], [0.319430738687515, 0.610403418540955, 0.647879004478455, -0.324999243021011], [-1, -1, 1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+VAR num Side;
+VAR bool Quit;
+VAR string String1;
+	PROC main()
+TPErase;
+RestartGripper;
+Quit := TRUE;
+WHILE Quit DO
+    TPReadFK Side, "Which can would you like to grab", "Left", "Right", stEmpty, stEmpty, stEmpty;
+    IF Side = 1 THEN
+        MoveJ LeftDispenser_Bottom, v500, fine, tool0;
+        WaitRob \InPos;
+        CloseGripper;
+    ELSE
+        MoveJ RightDispenser_Bottom, v500, fine, tool0;
+        WaitRob \InPos;
+        CloseGripper;
+    ENDIF
+    MoveL Center, v500, fine, tool0;
+    TPReadFK Side, "Where would you like to place the can?", "Left", "Right", stEmpty, stEmpty, stEmpty;
+    IF Side = 1 THEN
+        MoveJ LeftDispenser_Top, v500, fine, tool0;
+        WaitRob \InPos;
+        OpenGripper;
+    ELSE
+      <SMT>
+    ENDIF
+    MoveJ Center, v500, fine, tool0;
+    TPReadFK Side, "Would you like to continue?", "Yes", "No", stEmpty, stEmpty, stEmpty;
+    IF Side = 2 THEN
+        Quit := FALSE;
+    ENDIF
+ENDWHILE
+	ENDPROC
+PROC RestartGripper()
+    OR_RGX_RESETPOWER ;
+ENDPROC
+PROC CloseGripper()
+    OR_RGX_MOVE 90,20,1;
+ENDPROC
+PROC OpenGripper()
+    OR_RGX_MOVE 200,20,1;
+ENDPROC
+
+
+ENDMODULE

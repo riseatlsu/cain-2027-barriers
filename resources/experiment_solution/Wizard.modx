@@ -1,0 +1,82 @@
+MODULE Wizard
+PERS robtarget RightDispenser_Bottom_Down:=[[505.318389892578, 161.108917236328, 281.744720458984], [0.237862035632133, -0.693731486797333, 0.63124543428421, 0.252363741397858], [0, 0, -2, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget RightDispenser_Top_Down:=[[491.920837402344, 171.401718139648, 468.561187744141], [0.291875809431076, -0.670654654502869, 0.625640034675598, 0.27130326628685], [0, 0, -2, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget LeftDispenser_Bottom_Up:=[[493.505218505859, -164.364440917969, 308.246398925781], [0.234822228550911, 0.641353070735931, 0.688283443450928, -0.244521379470825], [-1, -1, 1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget LeftDispenser_Top_Up:=[[494.157440185547, -114.062561035156, 461.404815673828], [0.329667955636978, 0.604549050331116, 0.639606714248657, -0.341676324605942], [-1, -1, 1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget Center:=[[454.466979980469, -11.8663320541382, 520.459838867188], [0.0135859744623303, 0.00468210922554135, 0.999896168708801, -0.00106594688259065], [-1, -1, -1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget LeftDispenser_Bottom_Down:=[[494.4443359375, -169.00666809082, 285.210144042969], [0.221483796834946, 0.636379539966583, 0.699558854103088, -0.237872660160065], [-1, -1, 1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget LeftDispenser_Top_Down:=[[499.805480957031, -146.351303100586, 432.110168457031], [0.298536270856857, 0.636057019233704, 0.642663598060608, -0.3054358959198], [-1, -1, 1, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget RightDispenser_Bottom_Up:=[[495.083251953125, 137.994262695313, 320.932098388672], [0.255945056676865, -0.678619921207428, 0.641221821308136, 0.250602602958679], [0, 0, -2, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+PERS robtarget RightDispenser_Top_Up:=[[487.655029296875, -36.4814949035645, 543.919311523438], [0.253010392189026, -0.684137344360352, 0.636811196804047, 0.249826535582542], [-1, 0, -2, 0], [9000000000, 9000000000, 9000000000, 9000000000, 9000000000, 9000000000]];
+VAR num NextAction;
+VAR num ProgramStatus;
+	PROC main()
+ProgramStatus := 1;
+WHILE ProgramStatus = 1 DO
+    StartGripper;
+    OpenGripper;
+    MoveJ Center, v500, fine, tool0;
+    TPReadFK NextAction, "What is the next procedure?", "Move left can top", "Move right can top", "Move left can right", "Move right can left", stEmpty;
+    IF NextAction = 1 THEN
+        MoveLeftCanTop;
+    ENDIF
+    IF NextAction = 2 THEN
+        MoveRightCanTop;
+    ENDIF
+    IF NextAction = 3 THEN
+        MoveLeftCanRight;
+    ENDIF
+    IF NextAction = 4 THEN
+        MoveRightCanLeft;
+    ENDIF
+ENDWHILE
+	ENDPROC
+PROC StartGripper()
+    OR_RGX_RESETPOWER ;
+ENDPROC
+PROC CloseGripper()
+    OR_RGX_MOVE 90,20,1;
+ENDPROC
+PROC OpenGripper()
+    OR_RGX_MOVE 200,20,1;
+ENDPROC
+PROC MoveLeftCanTop()
+    MoveJ LeftDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ LeftDispenser_Bottom_Down, v500, fine, tool0;
+    CloseGripper;
+    MoveJ LeftDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ Center, v500, fine, tool0;
+    MoveJ LeftDispenser_Top_Up, v500, fine, tool0;
+    MoveJ LeftDispenser_Top_Down, v500, fine, tool0;
+    OpenGripper;
+ENDPROC
+PROC MoveLeftCanRight()
+    MoveJ LeftDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ LeftDispenser_Bottom_Down, v500, fine, tool0;
+    CloseGripper;
+    MoveJ LeftDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ Center, v500, fine, tool0;
+    MoveJ RightDispenser_Top_Up, v500, fine, tool0;
+    MoveJ RightDispenser_Top_Down, v500, fine, tool0;
+    OpenGripper;
+ENDPROC
+PROC MoveRightCanTop()
+    MoveJ RightDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ RightDispenser_Bottom_Down, v500, fine, tool0;
+    CloseGripper;
+    MoveJ RightDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ RightDispenser_Top_Up, v500, fine, tool0;
+    MoveJ RightDispenser_Top_Down, v500, fine, tool0;
+    OpenGripper;
+ENDPROC
+PROC MoveRightCanLeft()
+    MoveJ RightDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ RightDispenser_Bottom_Down, v500, fine, tool0;
+    CloseGripper;
+    MoveJ RightDispenser_Bottom_Up, v500, fine, tool0;
+    MoveJ Center, v500, fine, tool0;
+    MoveJ LeftDispenser_Top_Up, v500, fine, tool0;
+    MoveJ LeftDispenser_Top_Down, v500, fine, tool0;
+    OpenGripper;
+ENDPROC
+ENDMODULE
